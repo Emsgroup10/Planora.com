@@ -9,7 +9,7 @@ let mysql = require("mysql2");
 let con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "4936",
+  password: "root",
   database: "project_db",
 });
 app.use(exp.json());

@@ -8,7 +8,11 @@ export default function LoginComp(){
     const[msg,setmsg]=useState("")
     const navigate = useNavigate();
     const dispatch=useDispatch();
-    const reqoptions = {
+    
+    
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        const reqoptions = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -18,9 +22,6 @@ export default function LoginComp(){
         password:password,
       }),
     };
-    
-    const handleSubmit=(e)=>{
-        e.preventDefault();
         fetch("http://localhost:3000/login",reqoptions).then(
         resp=>{
             if(resp.status===200){
