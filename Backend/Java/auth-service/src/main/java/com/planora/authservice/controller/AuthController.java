@@ -1,4 +1,5 @@
-package com.planora.authservice.controller;
+
+	package com.planora.authservice.controller;
 
 import java.util.Optional;
 
@@ -13,9 +14,10 @@ import com.planora.authservice.entity.User;
 import com.planora.authservice.service.AuthService;
 import com.planora.authservice.util.JwtUtil;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin("*")
+
 public class AuthController {
 
     @Autowired
