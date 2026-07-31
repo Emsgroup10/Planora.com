@@ -1,5 +1,7 @@
 package com.planora.authservice.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class RegisterRequest {
 
     private Integer rid;
