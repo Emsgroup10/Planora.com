@@ -1,6 +1,8 @@
 package com.example.demo.Entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -8,6 +10,7 @@ import jakarta.persistence.Table;
 @Table(name="event_master")
 public class EventMaster {
 	@Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
 	int event_master_id;
 	
 	String event_name;
